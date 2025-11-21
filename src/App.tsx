@@ -1,6 +1,14 @@
 import AsciiDisplay from "./components/AsciiDisplay";
+import EasterEggPage from "./components/EasterEggPage";
+import { useSecretCode } from "./hooks/useSecretCode";
 
 function App() {
+  const { triggered, reset } = useSecretCode();
+
+  if (triggered) {
+    return <EasterEggPage onReturn={reset} />;
+  }
+
   return (
     <div style={{
       background: "black",
