@@ -1,6 +1,7 @@
 # ASCII React
 
 A React application that converts images to animated ASCII art with smooth, organic row-by-row animations.
+Coded for testing with Cursor.
 
 ## Features
 
